@@ -1,0 +1,34 @@
+step-1: Input Parameters
+	1.1 -> confiq.json
+	1.2 -> delays.json
+	1.3 -> latency.json
+step-2: Establish simulation world and network
+step-3: Create Organizations
+	3.1 -> create organizations
+	3.2 -> create peers,ordering service
+-----------------------------------------------
+                Completed
+-----------------------------------------------
+step-4: Create Channels
+	4.1 -> create channels
+	4.2 -> put some random organization and their peers in each channel
+		4.2.1 -> one of the organization peer will be admin
+		4.2.2 -> some organization/s peers need to be endorsers
+		4.2.3 -> create genesis block for each peer(maintain ledger)
+	4.3 ->put chaincode
+	4.4 ->put endorement policy
+	4.5 ->Establish a connection b/w peer-to-peer in each channel
+step-5: Generate Transactions
+	5.1 -> transaction b/w sender to receiver send to endosers 
+	5.2 -> endosers approve the transcation based on chaincode
+	5.3 -> transcation id and value need to store 
+step-6: Ordering service
+	6.1 -> certain number of transaction in each channel goes to ordeing service
+	6.2 -> ordering service make a block by RAFT consenses algorithm
+	6.3 -> block propagates to all the peers in channel
+step-7: Validate the block by each peer in channel by PBFT.
+step-8: Adding the block to ledger 
+
+
+
+	

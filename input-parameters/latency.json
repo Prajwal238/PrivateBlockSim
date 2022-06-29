@@ -1,0 +1,19 @@
+{
+    "locations":{
+        "Mumbai":{
+            "Mumbai":0.02,
+            "Delhi":0.3,
+            "Chennai":0.35
+        },
+        "Delhi":{
+            "Mumbai":0.42,
+            "Delhi":0.01,
+            "Chennai":0.38
+        },
+        "Chennai":{
+            "Mumbai":0.23,
+            "Delhi":0.67,
+            "Chennai":0.15
+        }
+    }
+}
